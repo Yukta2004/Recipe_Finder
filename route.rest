@@ -28,7 +28,7 @@ Content-Type: application/json
 
 
 ###Delete recipe by id
-DELETE http://localhost:5000/api/recipes/67ab98c9027d3749f8d55df1
+DELETE http://localhost:5000/api/recipes/id
 
 ###Delete recipe by name
  DELETE  http://localhost:5000/api/recipes/name/Pasta
