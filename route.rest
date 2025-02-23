@@ -1,0 +1,34 @@
+#Get All recipe
+ GET  http://localhost:5000/api/recipes
+
+### Recipe by name
+GET http://localhost:5000/api/recipes/name/recipe_name
+
+
+GET http://localhost:5000/api/recipes/67ab66650ea2a895751843b3
+
+
+
+### Add Recipe
+POST http://localhost:5000/api/recipes
+Content-Type: application/json
+
+{
+    "Srno": "6872",
+    "RecipeName": "Pasta",
+    "Ingredients": ["Pasta", "Tomato Sauce", "Cheese"],
+    "PrepTimeInMins": 10,
+    "CookTimeInMins": 20,
+    "TotalTimeInMins": 30,
+    "Servings": 2,
+    "Cuisine": "Italian",
+    "Course": "Main",
+    "Diet": "Vegetarian"
+}
+
+
+###Delete recipe by id
+DELETE http://localhost:5000/api/recipes/67ab98c9027d3749f8d55df1
+
+###Delete recipe by name
+ DELETE  http://localhost:5000/api/recipes/name/Pasta
